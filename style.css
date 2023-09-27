@@ -110,7 +110,7 @@ body {
 
 }
 
-table {
+.table {
     border-radius: 50px;
     margin: 100px;
     background-color: #d66215;
@@ -126,3 +126,4 @@ table {
     color: white;
     text-align: center;
  }
+
