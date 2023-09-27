@@ -1,22 +1,18 @@
 .header{
-    /* Pengaturan Magrin */
-    margin-top: -15px;
-    margin-right: -100px;
-    margin-left: -10px;
-
-    /* Pengaturan Padding */
-    padding-left: 10px;
-    padding-left: 10px;
-    padding-left: 10px;
-
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
+    position: fixed;
+    left: 0;
     top: 0;
-    background-color: #000000;
-    background-blend-mode: color-burn;
+    width: 100%;
+    background-color: black;
     color: white;
-    z-index: 999;
+    text-align: center;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.763);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;  
 }
 
 
@@ -24,6 +20,7 @@
 /* Nav */
 .nav {
     padding-left: 9px;
+    padding-right: 9px;
 }
 * {
     box-sizing: border-box;
@@ -97,22 +94,19 @@ body {
     background-image: url(bg.jpg);
     font-family: bobaland;
     margin-bottom: 1000px;
+    width: 100%;
 }
 
 .welcome {
     font-size: 30px;
     color: rgb(245, 185, 32);
-    margin-left: -20px;
-    margin-right: -20px;
 }
 
 .awal {
-    font-size: 150%;
+    font-size: 120%;
     color:white;
-    margin-left: -50px;
-    margin-right: -100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
@@ -120,7 +114,7 @@ table {
     border-radius: 50px;
     margin: 100px;
     background-color: #d66215;
-    padding: 100px;
+    padding: 50px;
 }
 
 .footer {
