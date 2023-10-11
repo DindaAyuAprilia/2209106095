@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuensun - World Of Your Fanfic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div style="font-family: bobaland;" class="navbar">
+            <a style="padding-top: 30px;float: left;" href="index.html">
+                <img src="xuensun.jpg" alt="Logo" class="logo">
+            </a>
+            <a style="padding-top: 40px;float: right;" href="About.html">About Me</a>
+            <a style="padding-top: 40px;float: right;" href="index.php">Home</a>
+            <a style="padding-top: 40px;float: right;" class="mode-button" onclick="toggleMode()">Mode Gelap/Terang</a>
+        </div>
+    </header>
+
+
+    <main>
+        <div style="text-align: center;" class="main-content">
+            <h1 align="center" colspan="3"> About Me </h1>
+            <img width="200" height="200" style="border-radius: 30px;margin-top:30px" src="me.jpg" alt="Dinda Ayu Aprilia"> <br>
+                <p style="text-align: left;"> 
+                Name    : Dinda Ayu Aprilia <br>
+                Age     : 19 Tahun <br>
+                Hobby   : Membaca <br>
+                Class   : C1 <br>
+                Nim     : 2209106095 <br>
+                    
+    </main>
+
+    <footer>
+        <div class="footer">
+            Dinda Ayu Aprilia (2209106095)
+        </div>
+    </footer>
+
+        <!-- Popup untuk mode gelap/terang -->
+    <div id="popup" class="popup">
+        <p>Mode Gelap/Terang telah diubah!</p>
+    </div>
+    
+
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const popup = document.getElementById("popup");
+            
+            // Toggle mode
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+        
+            // Tampilkan popup
+            popup.style.display = "block";
+        
+            // Sembunyikan popup setelah 2 detik
+            setTimeout(function() {
+                popup.style.display = "none";
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
