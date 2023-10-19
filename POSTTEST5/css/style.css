@@ -1,0 +1,215 @@
+
+/* ==================================================== */
+/* Navbar invers */
+/* Style untuk Navbar */
+.navbar {
+    background-color: #fc54009b; 
+    overflow: hidden;
+    border-radius: 50px;
+    border-color: #ffad21;
+    border: 3px;
+}
+
+.navbar a {
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    color: rgba(222, 218, 218, 0.981);
+    text-align: center;
+    padding: 20px 16px 15px 23px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    float: right;
+    padding-top: 30px;
+    color: rgb(254, 188, 8);
+}
+
+.navbar img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style untuk Mode Gelap/Terang */
+body.dark-mode {
+    font-family: bobaland;
+    background-color: #ffffff;
+    color: white;
+    background-image: url(https://images.unsplash.com/photo-1590509028942-0ac2b8412dbf?auto=format&fit=crop&q=80&w=987&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-size: cover; /* Untuk mengisi seluruh layar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; /* Membuat gambar latar belakang tetap saat gulir halaman */
+    background-position: center center; /* Menengahkan gambar */
+}
+
+h1.dark-mode {
+    color: #ffffff;
+}
+
+body.light-mode {
+    font-family: bobaland;
+    background-color: #fff;
+    color: black;
+    background-image: url(https://plus.unsplash.com/premium_photo-1667668224582-84f16f7dedd0?auto=format&fit=crop&q=80&w=1009&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-size: cover; /* Untuk mengisi seluruh layar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; /* Membuat gambar latar belakang tetap saat gulir halaman */
+    background-position: center center; /* Menengahkan gambar */
+}
+
+h1.light-mode {
+    color: #000000;
+}
+
+
+/* Style untuk Logo */
+.logo {
+    margin-right: 10px;
+}
+
+/* Style untuk Tombol Mode */
+.mode-button {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mode-button:hover {
+    color: black;
+}
+
+
+/* ===================================================== */
+@font-face {
+    font-family: bobaland;
+    src: url(../text/Bobaland.ttf);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+ /* =================================================== */
+ .main-content {
+    border: 1px solid rgb(224, 146, 0);
+    background: rgba(154, 58, 10, 0.265);
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 150%;
+}
+
+.login-button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+.login-button:hover {
+    background-color: #8d8d8da0;
+    color: #000000;
+}
+
+.popup {
+    border-radius: 20px;
+    display: none;
+    background-color: #8d8d8d;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+form {
+    margin-right: 50%;
+}
+
+#login-box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 550px;
+    margin: 0 auto;
+    border: 1px solid rgb(224, 146, 0);
+    background: rgba(154, 58, 10, 0.265);
+    min-height: 250px;
+    padding: 20px;
+    z-index: 9999;
+  }
+  #login-box .logo {
+    text-align: center;
+  }
+
+  #login-box .logo .logo-caption {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #login-box .logo .tweak {
+    color: #fc5400d8;
+  }
+  #login-box .controls {
+    padding-top: 30px;
+  }
+  #login-box .controls input {
+    border-radius: 10px;
+    background: rgb(98, 96, 96);
+    border: 0px;
+    color: white;
+  }
+  #login-box .controls input:focus {
+    box-shadow: none;
+  }
+  #login-box .controls input:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+  #login-box .controls input:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  #login-box button.btn-custom {
+    border-radius: 2px;
+    margin-top: 8px;
+    background: #7eb000;
+    border-color: rgba(48, 46, 45, 1);
+    color: white;
+  }
+  #login-box button.btn-custom:hover {
+    transition: all 500ms ease;
+    background: rgba(48, 46, 45, 1);
+    border-color: #a6e700;
+  }
+
+  .containerF {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
